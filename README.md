@@ -12,3 +12,7 @@ https://ma.ttias.be/day-google-chrome-disables-http2-nearly-everyone-may-31st-20
 Certificate files are fake self signed certificates. If you'd like to test server with your clients you need
 to add certificates to your OS certificate store (or pass certificate file to client somehow, e.g. using curl
 cacert option.
+
+## Other Note
+
+This project is broken Chrome fails with ERR_SPDY_INADEQUATE_TRANSPORT_SECURITY.
