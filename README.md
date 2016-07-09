@@ -2,7 +2,12 @@
 
 Trying to create sample Twisted web resource in HTTP2 that will work in Chrome. Chrome above 51 dropped
 support for NPN. It only allows ALPN TLS extension. ALPN requires OpenSSL above 1.0.2 which is installed
-by default only in Ubuntu. 
+by default only in Ubuntu 16.04. To check Twisted with HTTP2 you can build docker image with Ubuntu 16.04 and all dependencies installed.
+
+```
+> make build # build docker image
+> make run # launch container 
+```
 
 https://www.nginx.com/blog/supporting-http2-google-chrome-users/
 https://ma.ttias.be/day-google-chrome-disables-http2-nearly-everyone-may-31st-2016/
