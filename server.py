@@ -44,7 +44,7 @@ if __name__ == "__main__":
     root.putChild(b"", Index())
     root.putChild(b"book", Book())
     site = server.Site(root)
-    endpoint_spec = "ssl:port=8080:privateKey=key.pem:extraCertChain=cert.pem"
+    endpoint_spec = "ssl:port=8080:privateKey=privkey.pem:certKey=cert.pem"
     server = endpoints.serverFromString(reactor, endpoint_spec)
     server.listen(site)
     reactor.run()
