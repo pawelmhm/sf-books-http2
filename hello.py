@@ -7,6 +7,7 @@ from twisted.python import log
 
 from twisted.internet import endpoints
 
+
 class Index(Resource):
     isLeaf = True
 
